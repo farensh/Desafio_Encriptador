@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./css/encriptador-1-desktop.css" />    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+</head>
+
+<body>
+    <div class="encriptador-1-desktop">
+        <!-- <div> -->
+            <title class="logo-icon">Alura - Challenge Desafío 1 Lógica</title>
+            <img class="logo-icon" loading="lazy" alt="" src="./ussets/img/frame-6.png" />            
+        <!-- </div>  -->
+        <div class="convert-button-inner">                          
+            <div class="ingrese-el-texto-aqui-parent">        
+                <input class="ingrese-el-texto" id="textInput" placeholder="Ingrese el texto aqui" value="">
+                <footer class="frame-parent">
+                    <div class="frame-group">
+                        <div class="frame-container">
+                            <div class="exclamation-circle-fill-wrapper">
+                                <img class="exclamation-circle-fill-icon" loading="lazy" alt=""
+                                    src="./ussets/img/exclamation-circle-fill.svg" />
+                            </div>
+                            <div class="solo-letras-minsculas">
+                                Solo letras minúsculas y sin acentos
+                            </div>
+                        </div>
+                        <button class="button" onclick="encriptar();">
+                            <div class="button1">Encriptar</div>
+                        </button>
+                    </div>
+                    <button class="button2" onclick="desEncriptar();">
+                        <div class="button3">Desencriptar</div>
+                    </button>                    
+                </footer>
+            </div>
+        </div>
+        <div class="rectangle-parent">
+                <img class="mueco-icon" id="mueco" loading="lazy" alt="" src="./ussets/img/mu-eco.png" />      
+                <div class="ningn-mensaje-fue-encontrado-parent" id="mensajeSinTexto">
+                    <h3 class="ningn-mensaje-fue">Ningún mensaje fue encontrado</h3>
+                    <div class="ingresa-el-texto">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </div>                          
+                </div>
+
+                <img class="mueco-icon" style="display: none;" id="mueco2" loading="lazy" alt="" src="./ussets/img/encontrado.png" />
+                <div class="ningn-mensaje-fue-encontrado-parent" id="divTextEncriptado" style="display: none;">
+                    <h3 class="ningn-mensaje-fue"></h3>
+                    <div class="ingresa-el-texto">                        
+                        <input id="textEncriptado" style="display: none;width: 100%;" value="" disabled>
+                    </div>                          
+                </div> 
+
+                <!-- <input class="ingrese-el-texto" id="textEncriptado" style="display: none;" value="" disabled>
+
+                <img class="mueco-icon ingresa-el-texto" style="display: none;" id="mueco2" loading="lazy" alt="" src="./ussets/img/encontrado.png" /> -->
+
+                
+                <button id="conTexto" class="button4" onclick="copiar();" style="display: none;">
+                    <div class="button5">Copiar</div>
+                </button>
+                <!-- </div> -->
+                
+  
+        </div>
+    </div>
+    <footer>
+        <div class="footer-autor">
+            Desarrollado por FAAH - 2024
+        </div>        
+    </footer>
+    <!-- <script>
+        var ingreseElTexto = document.getElementById("ingreseElTexto");
+        if (ingreseElTexto) {
+            // ingreseElTexto.addEventListener("click", function (e) {
+            //   window.location.href = "./encriptador2-desktop.html";
+            // });
+        }
+    </script> -->
+    <script src="./js/functionIncrept.js"></script>
+
+</body>
