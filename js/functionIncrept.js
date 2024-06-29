@@ -4,7 +4,7 @@ function encriptar(){
     textEncrip = [];
     var text = document.getElementById('textInput').value;   
    
-    var reg=new RegExp('[a-z]{2,254}');  
+    var reg=new RegExp('^[a-z ]{2,254}');  
 
     if (text.match(reg)){
         alert ("El formato es el correcto");
@@ -40,7 +40,7 @@ function desEncriptar(){
     var text_in = document.getElementById('textInput').value;
     this.text = text_in;  
 
-    var reg=new RegExp('[a-z]{2,254}');
+    var reg=new RegExp('^[a-z ]{2,254}');
 
     if (text.match(reg)){
 
@@ -63,8 +63,7 @@ function desEncriptar(){
         document.getElementById('mueco2').style.display="";        
         document.getElementById('textEncriptado').style.display="";
         document.getElementById('conTexto').style.display="";     
-
-        document.getElementById('textEncriptado').value = texto;
+        return document.getElementById('textEncriptado').value = texto;
     } else {
         alert ("El formato es incorrecto"); 
     }
